@@ -45,11 +45,12 @@ void QuickSort(int *arr, int low, int high) {
 }
 
 int main() {
-    int arr[7] = {3, 8, 1, 7, 9, 5, 6};
-    /* BubbleSort(arr, 7); */
-    QuickSort(arr, 0, 6);;
-    for (int i = 0; i < 7; ++i)
-        printf("%d ", arr[i]);
-    /* first add comments remote version*/
-    return 0;
+  int arr[7] = {3, 8, 1, 7, 9, 5, 6};
+  /* BubbleSort(arr, 7); */
+  QuickSort(arr, 0, 6);
+  ;
+  for (int i = 0; i < 7; ++i)
+    printf("%d ", arr[i]);
+  /* first add comments remote version*/
+  return 0;
 }
