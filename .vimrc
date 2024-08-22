@@ -27,7 +27,7 @@ autocmd VimEnter * GitGutterToggle
 autocmd InsertLeave,TextChanged * if &modified | silent write | endif
 " VCS永远显示侧边栏
 "set signcolumn=yes
-" 使其背景色与行背景一致从而变透明 " kj
+" 使其背景色与行背景一致从而变透明
 highlight! link SignColumn LineNr
 " 默认更新时间为4000ms,不利于异步更新
 set updatetime=100
@@ -218,10 +218,10 @@ let g:ycm_semantic_triggers =  {
 			\ 'c,cpp,python,java,go,erlang,perl': ['re!\w{2}'],
 			\ 'cs,lua,javascript': ['re!\w{2}'],
 			\ }
-" 仅在以下文件类型中使用ycm补全
-let g:ycm_filetype_whitelist = { 
+" 仅在以下文件类型中使用ycm补全 local
+let g:ycm_filetype_whitelist = {
 			\ "c":1,
-			\ "cpp":1, 
+			\ "cpp":1,
 		        \ "python":1,
 		        \ "js":1,
 		        \ "cc":1,
@@ -229,7 +229,7 @@ let g:ycm_filetype_whitelist = {
 		    	\ "java":1,
 			\ "sh":1,
 			\ }
-" 在接受补全后不分裂出一个窗口显示接受的项
+" 在接受补全后不分裂出一个窗口显示接受的项 .local
 set completeopt-=preview
 let g:ycm_error_symbol = '✗'
 let g:ycm_warning_symbol = '⚠'
@@ -242,7 +242,7 @@ highlight Pmenu ctermfg=yellow ctermbg=darkgrey guifg=#ABB2BF guibg=#21252B
 highlight PMenuSel ctermfg=blue ctermbg=black guifg=white guibg=#2C313C
 " }}}
 
-" -----Start interactive EasyAlign in visual mode (e.g. vipga) -----------
+" -----Start interactive EasyAlign in visual mode (e.g. vipga) ----------- local--
 xmap ga <Plug>(EasyAlign)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
