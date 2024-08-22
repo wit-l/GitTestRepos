@@ -1,14 +1,14 @@
-set nocompatible
+set nocompatible " remote
 filetype off
 " PLUGINS ---------------------------------------------------------------- {{{
 call plug#begin()
-Plug 'jiangmiao/auto-pairs'
+Plug 'jiangmiao/auto-pairs '
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes', { 'frozen': 1 }
 " NERD tree will be loaded on the first invocation of NERDTreeToggle command
 Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'tpope/vim-fugitive'  " VCS(Version Control System)信息,允许在vim上执行git指令
-"Plug 'mhinz/vim-signify'  " 同gitgutter但支持Git/svn/mercurial/cvs 在侧边栏实时显示修改状态
+"Plug 'mhinz/vim-signify'  " 同gitgutter但支持Git/svn/mercurial/cvs 在侧边栏实时显示修改状态 remote
 Plug 'airblade/vim-gitgutter', { 'lazy': 1 }   "hunks信息以及在侧边栏显示修改信息
 Plug 'ycm-core/YouCompleteMe', { 'for': ['cc', 'cpp', 'cxx','c', 'python', 'js', 'html'], 'do': './install.py --clangd-completer'}
 Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
@@ -27,7 +27,7 @@ autocmd VimEnter * GitGutterToggle
 autocmd InsertLeave,TextChanged * if &modified | silent write | endif
 " VCS永远显示侧边栏
 "set signcolumn=yes
-" 使其背景色与行背景一致从而变透明 
+" 使其背景色与行背景一致从而变透明 " kj
 highlight! link SignColumn LineNr
 " 默认更新时间为4000ms,不利于异步更新
 set updatetime=100
@@ -35,7 +35,7 @@ set updatetime=100
 set cursorline
 set cursorcolumn
 set scrolloff=5 "Minimal number of screen lines to keep above and below the cursor.
-" ========== airline主题配置（底部状态栏和顶部tab栏）==============
+" ========== airline主题配置（底部状态栏和顶部tab栏）xxrem==============
 let g:airline_theme='cobalt2'
 let g:airline#extensions#tabline#enabled=1 " 启用顶部tab栏
 let g:airline_powerline_fonts=1
@@ -52,7 +52,7 @@ filetype plugin indent on "vundle required"
 " 显示光标当前位置，右下角可看到当前行和列数
 set ruler
 " 高亮显示搜索结果
-set hlsearch
+set   hlsearch "rem
 " 启用增量搜索（实时更新搜索匹配项，搭配显示高亮搜索结果）
 set incsearch
 set history=1000
