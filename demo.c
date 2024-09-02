@@ -1,6 +1,6 @@
 #include <stdio.h>
 // remote version
-void swap(int *a, int *b) { // remote
+void swap(int *a, int *b) { // l
   if (*a == *b)
     return;
   *a ^= *b;
@@ -8,7 +8,7 @@ void swap(int *a, int *b) { // remote
   *a ^= *b;
 }
 
-void BubbleSort(int *arr, int len) { // remote
+void BubbleSort(int *arr, int len) { // l
   int flag;
   for (int i = 0; i < len; ++i) {
     flag = 0;
