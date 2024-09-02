@@ -52,5 +52,6 @@ int main() {
   for (int i = 0; i < 7; ++i)
     printf("%d ", arr[i]);
   /* first add comments remote version*/
+  // remote version
   return 0;
 }
