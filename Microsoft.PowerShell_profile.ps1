@@ -23,7 +23,7 @@ Set-PSReadLineKeyHandler -Key "Tab" -Function MenuComplete
 Set-PSReadLineKeyHandler -Key "Ctrl+d" -Function ViExit
 Set-PSReadLineKeyHandler -Key "Ctrl+f" -Function AcceptSuggestion
 Set-PSReadLineKeyHandler -Key "Alt+n" -Function AcceptNextSuggestionWord
-# 退出到Normal模式
+# 退出到Normal模式 remote comment out
 Set-PSReadLineKeyHandler -Key "Alt+q" -Function ViCommandMode
 Set-PSReadLineKeyHandler -Key "Alt+h" -Function BackwardWord
 Set-PSReadLineKeyHandler -Key "Alt+l" -Function ForwardWord
