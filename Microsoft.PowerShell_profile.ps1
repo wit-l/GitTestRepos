@@ -38,4 +38,4 @@ Set-PSReadlineKeyHandler -Key "Ctrl+a" -Function SelectAll
 # Set-PSReadlineKeyHandler -Key "Spacebar+j" -Function ForwardWord
 # Set-PSReadlineKeyHandler -Key "Spacebar+k" -Function BackwardWord
 #------------------------------- Set Hot-keys END -------------------------------
-# neofetch
+# neofetch remote comment out
