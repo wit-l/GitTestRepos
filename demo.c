@@ -50,6 +50,6 @@ int main() {
     QuickSort(arr, 0, 6);
     for (int i = 0; i < 7; ++i)
         printf("%d ", arr[i]);
-    /* first add comments */
+    /* first add comments remote version*/
     return 0;
 }
